@@ -2,16 +2,98 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Selection - Public Transport Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #c9fe4f, #00f2fe); /* colorful gradient */
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            color: #fff;
+            max-width: 900px;
+            width: 90%;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+        }
+
+        h1 {
+            margin-bottom: 25px;
+            font-size: 2rem;
+            background: linear-gradient(90deg, #afa7a2, #ece8ea);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .languages {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .languages button {
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+            border: none;
+            padding: 12px 25px;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            color: #000; /* black text */
+            font-weight: bold;
+        }
+
+        .languages button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+        }
+    </style>
 </head>
 <body>
-<h1>heloow</h1>
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad error ipsa laudantium fugiat cumque deleniti ex perferendis voluptatem sapiente totam consectetur est deserunt, molestiae consequatur, modi aspernatur maxime. Fugit, quibusdam!
-<br>
-<h1>unplash</h1>
-<a href="">google</a>
-<img src="C:\Users\juned\Downloads\pawel-czerwinski-bbWReqEz1bM-unsplash.jpg" alt="">
+    <div class="container">
+        <h1>Select Your Language</h1>
+        <div class="languages">
+            <button onclick="selectLanguage('English')">English</button>
+            <button onclick="selectLanguage('Assamese')">Assamese</button>
+            <button onclick="selectLanguage('Bengali')">Bengali</button>
+            <button onclick="selectLanguage('Bodo')">Bodo</button>
+            <button onclick="selectLanguage('Dogri')">Dogri</button>
+            <button onclick="selectLanguage('Gujarati')">Gujarati</button>
+            <button onclick="selectLanguage('Hindi')">Hindi</button>
+            <button onclick="selectLanguage('Kannada')">Kannada</button>
+            <button onclick="selectLanguage('Kashmiri')">Kashmiri</button>
+            <button onclick="selectLanguage('Konkani')">Konkani</button>
+            <button onclick="selectLanguage('Maithili')">Maithili</button>
+            <button onclick="selectLanguage('Malayalam')">Malayalam</button>
+            <button onclick="selectLanguage('Manipuri')">Manipuri</button>
+            <button onclick="selectLanguage('Marathi')">Marathi</button>
+            <button onclick="selectLanguage('Nepali')">Nepali</button>
+            <button onclick="selectLanguage('Odia')">Odia</button>
+            <button onclick="selectLanguage('Punjabi')">Punjabi</button>
+            <button onclick="selectLanguage('Sanskrit')">Sanskrit</button>
+            <button onclick="selectLanguage('Santali')">Santali</button>
+            <button onclick="selectLanguage('Sindhi')">Sindhi</button>
+            <button onclick="selectLanguage('Tamil')">Tamil</button>
+            <button onclick="selectLanguage('Telugu')">Telugu</button>
+            <button onclick="selectLanguage('Urdu')">Urdu</button>
+        </div>
+    </div>
 
+    <script>
+        function selectLanguage(lang) {
+            alert("You selected: " + lang);
+            // window.location.href = lang + "-dashboard.html";
+        }
+    </script>
 </body>
 </html>
